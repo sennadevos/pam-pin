@@ -6,10 +6,10 @@ A lightweight Pluggable Authentication Module (PAM) for unix systems that allows
 - An installation script (`install.sh`).
 
 ## Features
-- ✅ PIN-based authentication via PAM.
-- ✅ Secure hashing with Argon2.
-- ✅ User PIN management via a simple Python script.
-- ✅ PINs stored securely under `/etc/security/pin_hashes` with proper permissions.
+- [x] PIN-based authentication via PAM.
+- [x] Secure hashing with Argon2.
+- [x] User PIN management via a simple Python script.
+- [x] PINs stored securely under `/etc/security/pin_hashes` with proper permissions.
 
 ## Installation
 ### Prerequisites
@@ -47,7 +47,7 @@ set-pin.py [USERNAME] <PIN>
     ```bash
     set-pin.py ben 5678
     ```
-**⚠️ Do NOT run set-pin.py as root.** The script will refuse to run as root to prevent security issues.
+**!! Do NOT run set-pin.py as root.** The script will refuse to run as root to prevent security issues.
 
 ### How it Works
 - PIN hashes are stored in `/etc/security/pin_hashes/<username>.hash`.
