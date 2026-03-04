@@ -67,7 +67,7 @@ auth required pam_pin.so
 ```
 Now, when using `sudo`, you will be prompted for a PIN.
 
-✅ You can combine this with password authentication, or replace it entirely depending on the PAM configuration.
+> You can combine this with password authentication, or replace it entirely depending on the PAM configuration.
 
 ## Security Notes
 - PINs are hashed using Argon2id, a modern memory-hard hashing algorithm.
